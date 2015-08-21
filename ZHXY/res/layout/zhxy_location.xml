@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/common_bg">
+    
+    <RelativeLayout
+        android:id="@+id/zhxyLocationRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/zhxyLocationBackTextView"
+            style="@style/commonText"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/home_location"
+            android:textColor="@color/common_bg"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/zhxyLocationRelativeLayout"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/zhxyLocationLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_height_90"
+        android:layout_alignParentRight="true"
+        android:background="@color/register_transparent"
+        android:layout_below="@id/zhxyLocationRelativeLayout"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <Button
+            android:id="@+id/pre"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/location_arrow_pre"
+            android:onClick="nodeClick" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/location_arrow_next"
+            android:onClick="nodeClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_height_90"
+        android:background="@color/register_transparent"
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@id/zhxyLocationLinearLayout"
+        android:layout_below="@id/zhxyLocationRelativeLayout"
+        android:gravity="center"
+        android:padding="8dp" >
+
+        <ImageButton
+            android:id="@+id/drive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/location_car_pressed"
+            android:contentDescription="@string/app_name"
+            android:onClick="SearchButtonProcess" />
+
+        <ImageButton
+            android:id="@+id/transit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_25"
+            android:background="@drawable/location_bus_pressed"
+            android:contentDescription="@string/app_name"
+            android:onClick="SearchButtonProcess" />
+
+        <ImageButton
+            android:id="@+id/walk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_25"
+            android:background="@drawable/location_walk_pressed"
+            android:contentDescription="@string/app_name"
+            android:onClick="SearchButtonProcess" />
+    </LinearLayout>
+
+</RelativeLayout>

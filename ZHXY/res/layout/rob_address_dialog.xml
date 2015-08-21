@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/heart_item_layout_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/commonText"
+        android:padding="@dimen/common_padding_10"
+        android:text="@string/rob_success"
+        android:textColor="@color/common_red"
+        android:layout_gravity="center" />
+
+    <View style="@style/commonLineView" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin_3"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/commonText"
+            android:layout_marginLeft="@dimen/common_margin_10"
+            android:text="@string/love_detail_name"
+            android:textColor="@color/common_text" />
+
+        <EditText
+            android:id="@+id/robAddressNameEditText"
+            style="@style/myinfoAccountManagerEditText"
+            android:layout_marginLeft="@dimen/common_margin_3"
+            android:layout_marginRight="@dimen/common_margin_10"
+            android:gravity="left"
+            android:inputType="text"
+            android:padding="@dimen/common_padding_5" />
+    </LinearLayout>
+
+    <View style="@style/commonLineView" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin_3"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/commonText"
+            android:layout_marginLeft="@dimen/common_margin_10"
+            android:text="@string/train_school_phone"
+            android:textColor="@color/common_text" />
+
+        <EditText
+            android:id="@+id/robAddressPhoneEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_3"
+            android:layout_marginRight="@dimen/common_margin_10"
+            android:background="@null"
+            android:inputType="phone"
+            android:padding="@dimen/common_padding_5" />
+    </LinearLayout>
+
+    <View style="@style/commonLineView" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin_3"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/commonText"
+            android:layout_marginLeft="@dimen/common_margin_10"
+            android:text="@string/train_school_address"
+            android:textColor="@color/common_text" />
+
+        <EditText
+            android:id="@+id/robAddressAddressEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_3"
+            android:layout_marginRight="@dimen/common_margin_10"
+            android:background="@null"
+            android:inputType="text"
+            android:padding="@dimen/common_padding_5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_margin_15"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/robAddressEditButton"
+            style="@style/commonButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/myinfo_exit_login_button_selector"
+            android:text="@string/rob_address_edit" />
+
+        <Button
+            android:id="@+id/robAddressConfirmButton"
+            style="@style/commonButton"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/common_margin_30"
+            android:layout_weight="1"
+            android:text="@string/rob_address_confirm" />
+    </LinearLayout>
+
+</LinearLayout>

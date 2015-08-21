@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/chatRelativeLayout"
+    android:layout_marginLeft="@dimen/common_margin_5"
+    android:layout_marginTop="@dimen/common_margin_5"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="@dimen/common_padding_5" >
+
+    <RelativeLayout
+        android:id="@+id/chatItemMsgLeftRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:clickable="false"
+        android:focusable="false"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/chatItemMesUserHeaderImageView"
+            android:layout_width="@dimen/common_width_52"
+            android:layout_height="@dimen/common_height_52"
+            android:layout_marginTop="@dimen/common_margin_8"
+            android:background="@drawable/chat_header_image"
+            android:contentDescription="@string/app_name"
+            android:clickable="false"
+        	android:focusable="false"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/chatItemMesUserTextView"
+            style="@style/commonText"
+            android:layout_below="@id/chatItemMesUserHeaderImageView"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/common_text" 
+            android:clickable="false"
+        	android:focusable="false"
+            android:textSize="@dimen/common_text_size_14"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/chatItemMesTimeTextView"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginLeft="@dimen/common_margin_15"
+        android:layout_toRightOf="@id/chatItemMsgLeftRelativeLayout" />
+
+    <LinearLayout
+        android:id="@+id/chatMsgItemLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/common_margin_8"
+        android:layout_marginTop="@dimen/common_margin_5"
+        android:layout_marginRight="@dimen/common_margin_5"
+        android:background="@drawable/chat_msg_item_left"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_toRightOf="@id/chatItemMsgLeftRelativeLayout"
+        android:layout_below="@+id/chatItemMesTimeTextView">
+
+        <TextView
+            android:id="@+id/chatItemMesContentTextView"
+            style="@style/chat_content_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:lineSpacingExtra="2dp"
+            android:minHeight="50dp"
+            android:textColor="#ff000000"
+            android:clickable="false"
+        	android:focusable="false"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/common_text_size_16" />
+        <ImageView
+            android:id="@+id/chatItemMesImageView"
+            android:layout_width="@dimen/common_width_100"
+            android:layout_height="@dimen/common_height_150"
+            android:contentDescription="@string/app_name"
+            android:clickable="false"
+        	android:focusable="false"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/chatItemMesVoiceTimeTextView"
+        style="@style/commonText"
+        android:layout_below="@+id/chatItemMesTimeTextView"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/chatMsgItemLinearLayout"
+        android:layout_marginRight="@dimen/common_margin_50"
+        android:clickable="false"
+        android:focusable="false"
+        android:textColor="@color/common_red"/>
+
+</RelativeLayout>

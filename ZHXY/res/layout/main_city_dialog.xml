@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_padding_5"
+        android:background="@drawable/heart_item_layout_bg"
+        android:hint="@string/main_search_hint" />
+    <LinearLayout 
+        android:id="@+id/mainCityLocationLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_height_35"
+        android:gravity="center_vertical"
+        android:background="#E8E8E8"
+        android:orientation="horizontal">
+        <TextView 
+            style="@style/commonText"
+            android:text="@string/main_location"
+            android:textColor="@color/common_text"/>
+        <TextView 
+            android:id="@+id/mainCityLocationTextView"
+            style="@style/commonText"
+            android:text="@string/main_locationing"
+            android:textColor="@color/common_text"
+            android:textSize="@dimen/common_text_size_16"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/city_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/city_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:cacheColorHint="#00000000"
+                android:scrollbars="none" />
+
+            <com.education.zhxy.common.view.MyLetterListView
+                android:id="@+id/cityLetterListView"
+                android:layout_width="30dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="#40000000" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/overlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:maxWidth="80dp"
+            android:minWidth="80dp"
+            android:text=""
+            android:textColor="#3399ff"
+            android:textSize="70sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

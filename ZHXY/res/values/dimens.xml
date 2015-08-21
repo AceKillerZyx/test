@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="common_margin_1">1dp</dimen>
+    <dimen name="common_margin_3">3dp</dimen>
+    <dimen name="common_margin_5">5dp</dimen>
+    <dimen name="common_margin_8">8dp</dimen>
+    <dimen name="common_margin_10">10dp</dimen>
+    <dimen name="common_margin_15">15dp</dimen>
+    <dimen name="common_margin_25">25dp</dimen>
+    <dimen name="common_margin_30">30dp</dimen>
+    <dimen name="common_margin_35">35dp</dimen>
+    <dimen name="common_margin_40">40dp</dimen>
+    <dimen name="common_margin_50">50dp</dimen>
+    <dimen name="common_margin_55">55dp</dimen>
+    <dimen name="common_margin_60">60dp</dimen>
+    <dimen name="common_margin_70">70dp</dimen>
+    
+    <dimen name="common_padding_2">2dp</dimen>
+    <dimen name="common_padding_5">5dp</dimen>
+    <dimen name="common_padding_8">8dp</dimen>
+    <dimen name="common_padding_10">10dp</dimen>
+    <dimen name="common_padding_15">15dp</dimen>
+    <dimen name="common_padding_20">20dp</dimen>
+    
+    <dimen name="common_width_8">8dp</dimen>
+    <dimen name="common_width_35">35dp</dimen>
+    <dimen name="common_width_45">45dp</dimen>
+    <dimen name="common_width_50">50dp</dimen>
+    <dimen name="common_width_52">52dp</dimen>
+    <dimen name="common_width_60">60dp</dimen>
+    <dimen name="common_width_70">70dp</dimen>
+    <dimen name="common_width_90">90dp</dimen>
+    <dimen name="common_width_100">100dp</dimen>
+    <dimen name="common_width_150">150dp</dimen>
+    
+    <dimen name="common_height_8">8dp</dimen>
+    <dimen name="common_height_35">35dp</dimen>
+    <dimen name="common_height_40">40dp</dimen>
+    <dimen name="common_height_45">45dp</dimen>
+    <dimen name="common_height_50">50dp</dimen>
+    <dimen name="common_height_52">52dp</dimen>
+    <dimen name="common_height_60">60dp</dimen>
+    <dimen name="common_height_70">70dp</dimen>
+    <dimen name="common_height_80">80dp</dimen>
+    <dimen name="common_height_90">90dp</dimen>
+    <dimen name="common_height_100">100dp</dimen>
+    <dimen name="common_height_150">150dp</dimen>
+    
+    <dimen name="common_text_size_12">12sp</dimen>
+    <dimen name="common_text_size_14">14sp</dimen>
+    <dimen name="common_text_size_16">16sp</dimen>
+    <dimen name="common_text_size_18">18sp</dimen>
+    <dimen name="common_text_size_20">20sp</dimen>
+    <dimen name="common_text_size_22">22sp</dimen>
+    
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    
+</resources>

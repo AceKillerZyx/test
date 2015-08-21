@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/white">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/detailsBackTextView"
+            style="@style/commonText"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/details"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+    
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="none" 
+        >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+             <ImageView
+                android:id="@+id/DetailsOneImaeView"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/common_viewpager_bg"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+        
+        
+        	 <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/DetailsTitleOneTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textColor="@color/common_text" 
+                    android:textSize="@dimen/common_text_size_14"
+                    android:text="范甘迪发股份"/>
+
+                <View style="@style/commonLineView"/>
+
+                <TextView
+                    android:id="@+id/DetailsContentOneTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:text="内容"/>
+            </LinearLayout>
+            
+        	<!-- 第二部分 --> 
+        	 <ImageView
+                android:id="@+id/DetailsTwoImaeView"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/common_viewpager_bg"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+        
+        
+        	 <LinearLayout
+        	     android:id="@+id/detailsLinearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/DetailsTitleTwoTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textColor="@color/common_text" 
+                    android:textSize="@dimen/common_text_size_14"
+                    android:text="范甘迪发股份"/>
+
+                <View style="@style/commonLineView"/>
+
+                <TextView
+                    android:id="@+id/DetailsContentTwoTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:text="内容"/>
+            </LinearLayout>
+
+       	<!-- 第三部分 -->
+        	 <ImageView
+                android:id="@+id/DetailsThreeImaeView"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/common_viewpager_bg"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+        
+        
+        	 <LinearLayout
+        	      android:id="@+id/detailsLinearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/DetailsTitleThreeTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textColor="@color/common_text" 
+                    android:textSize="@dimen/common_text_size_14"
+                    android:text="范甘迪发股份"/>
+
+                <View style="@style/commonLineView"/>
+
+                <TextView
+                    android:id="@+id/DetailsContentThreeTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:text="内容"/>
+            </LinearLayout>
+        	 
+        	 <!-- 第四部分 -->
+        	 <ImageView
+                android:id="@+id/DetailsFourImaeView"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/common_viewpager_bg"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+        
+        
+        	 <LinearLayout
+        	      android:id="@+id/detailsLinearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/DetailsTitleFourTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textColor="@color/common_text" 
+                    android:textSize="@dimen/common_text_size_14"
+                    android:text="范甘迪发股份"/>
+
+                <View style="@style/commonLineView"/>
+
+                <TextView
+                    android:id="@+id/DetailsContentFourTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:text="内容"/>
+            </LinearLayout>
+        	 
+        	 <!-- 第五部分 -->
+        	  <ImageView
+                android:id="@+id/DetailsFiveImaeView"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/common_viewpager_bg"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+        
+        	 <LinearLayout
+        	    android:id="@+id/detailsLinearLayout5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/DetailsTitleFiveTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textColor="@color/common_text" 
+                    android:textSize="@dimen/common_text_size_14"
+                    android:text="范甘迪发股份"/>
+
+                <View style="@style/commonLineView"/>
+
+                <TextView
+                    android:id="@+id/DetailsContentFiveTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:text="内容"/>
+            </LinearLayout>
+        	 
+        	 
+        	 <!-- 最后····加载更多部分 -->
+        	<LinearLayout 
+        	    android:id="@+id/detailsMoreLinearLayout"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	   android:layout_gravity="right" 
+        	   android:orientation="horizontal">
+            <TextView 
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:textSize="12sp"
+        	    android:layout_marginTop="5dp"
+        	    android:layout_marginBottom="5dp"
+        	    android:textColor="#2177C7"
+        	   	android:layout_marginRight="3dp"
+        	   	android:text="查看更多:"
+        	    />    
+        	    
+        	<TextView 
+        	    android:id="@+id/detailsMoreTextView"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:textSize="12sp"
+        	    android:layout_marginTop="5dp"
+        	    android:layout_marginBottom="5dp"
+        	    android:textColor="#2177C7"
+        	   	android:layout_marginRight="3dp"
+        	   	android:text="sssss"
+        	    />
+        	</LinearLayout>
+        </LinearLayout>
+        
+        
+        
+        
+    </ScrollView>
+    
+   
+
+</LinearLayout>

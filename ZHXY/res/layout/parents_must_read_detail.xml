@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/parentsMustReadDetailBackTextView"
+            style="@style/commonText"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/main_parents_must_read"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin_8"
+            android:background="@drawable/study_layout_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/common_padding_8" >
+
+            <TextView
+                android:id="@+id/parentsMustReadDetailNameTextView"
+                style="@style/commonText"
+                android:layout_width="fill_parent"
+                android:textColor="@color/common_title_bg" />
+
+            <TextView
+                android:id="@+id/parentsMustReadDetailContentTextView"
+                style="@style/commonText"
+                android:layout_marginTop="@dimen/common_margin_3"
+                android:textSize="@dimen/common_text_size_14" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

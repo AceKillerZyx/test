@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/parentsMustReadBackTextView"
+            style="@style/commonText"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/main_parents_must_read"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_height_40"
+        android:background="@drawable/study_layout_bg"
+        android:layout_margin="@dimen/common_margin_8"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/parentsMustReadEducateTextView"
+            style="@style/commonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="fill_parent"
+            android:background="@drawable/study_one_selector"
+            android:text="@string/parents_must_read_educate" />
+
+        <TextView
+            android:id="@+id/parentsMustReadStudyTextView"
+            style="@style/commonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="fill_parent"
+            android:background="@drawable/study_one_selector"
+            android:text="@string/parents_must_read_study" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_height_35"
+        android:layout_marginLeft="@dimen/common_margin_8"
+        android:layout_marginRight="@dimen/common_margin_8"
+        android:background="@drawable/study_layout_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/parentsMustReadNurseryTextView"
+            style="@style/commonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/study_nursery" 
+            android:layout_height="fill_parent"
+            android:background="@drawable/study_two_selector"
+            android:textSize="@dimen/common_text_size_16"/>
+        <View 
+            android:id="@+id/parentsMustReadOneView"
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/common_bg"/>
+
+        <TextView
+            android:id="@+id/parentsMustReadPrimaryTextView"
+            style="@style/commonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="fill_parent"
+            android:text="@string/study_primary" 
+            android:background="@drawable/study_two_selector"
+            android:textSize="@dimen/common_text_size_16"/>
+        <View 
+            android:id="@+id/parentsMustReadTwoView"
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/common_bg"/>
+
+        <TextView
+            android:id="@+id/parentsMustReadHuniorMiddleTextView"
+            style="@style/commonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="fill_parent"
+            android:text="@string/study_junior_middle" 
+            android:background="@drawable/study_two_selector"
+            android:textSize="@dimen/common_text_size_16"/>
+        <View 
+            android:id="@+id/parentsMustReadThreeView"
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/common_bg"/>
+
+        <TextView
+            android:id="@+id/parentsMustReadSeniorMiddleTextView"
+            style="@style/commonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="fill_parent"
+            android:text="@string/study_senior_middle"
+            android:background="@drawable/study_two_selector" 
+            android:textSize="@dimen/common_text_size_16"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/parentsMustReadListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/common_margin_8"
+        android:divider="@color/gray"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:background="@drawable/study_layout_bg"
+        android:scrollbars="none" />
+
+</LinearLayout>

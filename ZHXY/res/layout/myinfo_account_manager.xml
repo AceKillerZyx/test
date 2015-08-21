@@ -1,0 +1,273 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/myinfoAccountManagerBackTextView"
+            style="@style/commonText"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/myinfo_account_manager"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_22" />
+
+        <TextView
+            android:id="@+id/myinfoAccountManagerFinishTextView"
+            style="@style/commonText"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="@string/myinfo_account_manager_finish"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_16" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin_8"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_margin="@dimen/common_margin_5"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_centerVertical="true"
+                    android:text="@string/myinfo_account_manager_update_header_image" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center" >
+
+                    <com.education.zhxy.common.view.CircleImageView
+                        android:id="@+id/myinfoAccountManagerHeaderCircleImageView"
+                        android:layout_width="@dimen/common_width_90"
+                        android:layout_height="@dimen/common_height_90"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/common_header_image"
+                        android:contentDescription="@string/app_name" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/myinfo_image_outside"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View style="@style/commonLineView" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_margin_8"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/myinfoAccountManagerNameTextView"
+                    style="@style/commonText"
+                    android:layout_centerVertical="true"
+                    android:text="@string/myinfo_account_manager_name" />
+
+                <EditText
+                    android:id="@+id/myinfoAccountManagerNameEditText"
+                    style="@style/myinfoAccountManagerEditText"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/common_margin_3"
+                    android:layout_toRightOf="@id/myinfoAccountManagerNameTextView"
+                    android:enabled="false" />
+            </RelativeLayout>
+
+            <View style="@style/commonLineView" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_margin_8"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/myinfoAccountManagerSexTextView"
+                    style="@style/commonText"
+                    android:layout_centerVertical="true"
+                    android:text="@string/myinfo_account_manager_sex" />
+
+                <Spinner
+                    android:id="@+id/myinfoAccountManagerSexSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:animationCache="true"
+                    android:background="@null"
+                    android:drawSelectorOnTop="true"
+                    android:gravity="right" />
+            </RelativeLayout>
+
+            <View style="@style/commonLineView" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_margin_8"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/myinfoAccountManagerAgeTextView"
+                    style="@style/commonText"
+                    android:layout_centerVertical="true"
+                    android:text="@string/myinfo_account_manager_age" />
+
+                <EditText
+                    android:id="@+id/myinfoAccountManagerAgeEditText"
+                    style="@style/myinfoAccountManagerEditText"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/common_margin_3"
+                    android:layout_toRightOf="@id/myinfoAccountManagerAgeTextView"
+                    android:inputType="numberDecimal" />
+            </RelativeLayout>
+
+            <View style="@style/commonLineView" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_margin_8"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_centerVertical="true"
+                    android:text="@string/myinfo_account_manager_job" />
+
+                <TextView
+                    android:id="@+id/myinfoAccountManagerJobTextView"
+                    style="@style/commonText"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <View style="@style/commonLineView" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_margin_8"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/myinfoAccountManagerInstructionTextView"
+                    style="@style/commonText"
+                    android:layout_centerVertical="true"
+                    android:text="@string/myinfo_account_manager_instruction" />
+
+                <EditText
+                    android:id="@+id/myinfoAccountManagerInstructionEditText"
+                    style="@style/myinfoAccountManagerEditText"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/common_margin_3"
+                    android:layout_toRightOf="@id/myinfoAccountManagerInstructionTextView" />
+            </RelativeLayout>
+
+            <View style="@style/commonLineView" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_margin_8"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/myinfoAccountManagerLoveTextView"
+                    style="@style/commonText"
+                    android:layout_centerVertical="true"
+                    android:text="@string/myinfo_account_manager_love" />
+
+                <EditText
+                    android:id="@+id/myinfoAccountManagerLoveEditText"
+                    style="@style/myinfoAccountManagerEditText"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/common_margin_3"
+                    android:layout_toRightOf="@id/myinfoAccountManagerLoveTextView" />
+            </RelativeLayout>
+
+            <View style="@style/commonLineView" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_margin_8"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/myinfoAccountManagerClassTextView"
+                    style="@style/commonText"
+                    android:layout_centerVertical="true"
+                    android:text="@string/myinfo_account_manager_class" />
+
+                <EditText
+                    android:id="@+id/myinfoAccountManagerClassEditText"
+                    style="@style/myinfoAccountManagerEditText"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/common_margin_3"
+                    android:layout_toRightOf="@id/myinfoAccountManagerClassTextView"
+                    android:enabled="false" />
+            </RelativeLayout>
+
+            <View style="@style/commonLineView" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_margin_8"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/myinfoAccountManagerAddressTextView"
+                    style="@style/commonText"
+                    android:layout_centerVertical="true"
+                    android:text="@string/myinfo_account_manager_address" />
+
+                <EditText
+                    android:id="@+id/myinfoAccountManagerAddressEditText"
+                    style="@style/myinfoAccountManagerEditText"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/common_margin_3"
+                    android:layout_toRightOf="@id/myinfoAccountManagerAddressTextView" />
+            </RelativeLayout>
+
+            <View style="@style/commonLineView" />
+
+            <TextView
+                android:id="@+id/myinfoAccountManagerUpdatePasswordTextView"
+                style="@style/commonText"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="@dimen/common_margin_10"
+                android:drawableRight="@drawable/common_arrow_right"
+                android:padding="@dimen/common_padding_8"
+                android:text="@string/myinfo_account_manager_update_password" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

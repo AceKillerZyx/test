@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/heart_item_layout_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/common_padding_8" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/mySchoolInformedItemTitleTextView"
+            style="@style/commonText"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/common_text"
+            android:textSize="@dimen/common_text_size_20" />
+
+        <TextView
+            android:id="@+id/mySchoolInformedItemTimeTextView"
+            style="@style/commonText"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/common_margin_3"
+            android:textColor="@color/common_text"
+            android:textSize="@dimen/common_text_size_14" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mySchoolInformedItemContentTextView"
+        style="@style/commonText"
+         android:textSize="16sp"
+         android:textColor="@color/gray" />
+
+</LinearLayout>

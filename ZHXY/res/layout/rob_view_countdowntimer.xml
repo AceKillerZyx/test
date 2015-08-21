@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/rob_time_hour_figures_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/heart_item_layout_bg"
+        android:padding="@dimen/common_padding_2"
+        android:text="@string/common_zero"
+        android:textColor="@color/common_red"
+        android:textSize="@dimen/common_text_size_22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rob_time_hour_digit_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/common_margin_3"
+        android:background="@drawable/heart_item_layout_bg"
+        android:padding="@dimen/common_padding_2"
+        android:text="@string/common_zero"
+        android:textColor="@color/common_red"
+        android:textSize="@dimen/common_text_size_22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/common_margin_1"
+        android:background="@null"
+        android:padding="@dimen/common_padding_2"
+        android:text="@string/common_colon"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/common_text_size_22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rob_time_min_figures_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/common_margin_1"
+        android:background="@drawable/heart_item_layout_bg"
+        android:padding="@dimen/common_padding_2"
+        android:text="@string/common_zero"
+        android:textColor="@color/common_red"
+        android:textSize="@dimen/common_text_size_22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rob_time_min_digit_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/common_margin_3"
+        android:background="@drawable/heart_item_layout_bg"
+        android:padding="@dimen/common_padding_2"
+		android:text="@string/common_zero"
+        android:textColor="@color/common_red"
+        android:textSize="@dimen/common_text_size_22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/common_margin_1"
+        android:background="@null"
+        android:padding="@dimen/common_padding_2"
+        android:text="@string/common_colon"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/common_text_size_22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rob_time_sec_figures_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/common_margin_1"
+        android:background="@drawable/heart_item_layout_bg"
+        android:padding="@dimen/common_padding_2"
+        android:textColor="@color/common_red"
+        android:text="@string/common_zero"
+        android:textSize="@dimen/common_text_size_22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rob_time_sec_digit_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/common_margin_3"
+        android:background="@drawable/heart_item_layout_bg"
+        android:padding="@dimen/common_padding_2"
+        android:text="@string/common_zero"
+        android:textColor="@color/common_red"
+        android:textSize="@dimen/common_text_size_22"
+        android:textStyle="bold" />
+
+</LinearLayout>

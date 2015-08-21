@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="@color/common_bg">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/heartBackTextView"
+            style="@style/commonText"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/main_heart"
+            android:textColor="@color/common_bg"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/heartListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"
+        android:layout_margin="@dimen/common_margin_8"
+        android:dividerHeight="@dimen/common_margin_5"
+        android:listSelector="@android:color/transparent"/>
+
+</LinearLayout>

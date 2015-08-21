@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/common_height_90"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="@dimen/common_padding_8" >
+
+    <ImageView
+        android:id="@+id/trainItemImageView"
+        android:layout_width="@dimen/common_width_100"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/train_item_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/common_margin_8"
+        android:layout_toRightOf="@id/trainItemImageView"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/trainItemNameTextView"
+            style="@style/commonText"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/common_text_size_20" />
+
+        <TextView
+            android:id="@+id/trainItemInfoTextView"
+            style="@style/commonText"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/common_margin_3"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+         	android:textColor="@color/gray" />
+    </LinearLayout>
+
+</RelativeLayout>

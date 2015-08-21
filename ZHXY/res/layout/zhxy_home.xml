@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fragmentRoot"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/zhxyLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_bottom_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout style="@style/main_bottom_item">
+
+            <RadioButton
+                android:id="@+id/mainRadioButton"
+                style="@style/footbar"
+                android:drawableTop="@drawable/tab_main_normal"
+                android:paddingTop="@dimen/common_padding_8"
+                android:textColor="@color/main_bottom_gray"
+                android:text="@string/home_main" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/main_bottom_item" >
+
+            <RadioButton
+                android:id="@+id/robRadioButton"
+                style="@style/footbar"
+                android:drawableTop="@drawable/tab_rob_normal"
+                android:paddingTop="@dimen/common_padding_8"
+                android:textColor="@color/main_bottom_gray"
+                android:text="@string/home_rob" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/main_bottom_item" >
+
+            <RadioButton
+                android:id="@+id/myinfoRadioButton"
+                style="@style/footbar"
+                android:drawableTop="@drawable/tab_myinfo_normal"
+                android:paddingTop="@dimen/common_padding_8"
+                android:textColor="@color/main_bottom_gray"
+                android:text="@string/home_myinfo" />
+        </LinearLayout>
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/zhxyLinearLayout"
+        style="@style/down_radius1_black_style"
+        android:background="@color/gray"/>
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            style="@style/commonText"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/home_rob"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/common_margin_60"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/robImageView"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/common_viewpager_bg" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_padding_10" >
+
+                <TextView
+                    style="@style/commonText"
+                    android:text="@string/rob_panic_buying"
+                    android:textSize="@dimen/common_text_size_20" />
+
+                <TextView
+                    android:id="@+id/robNumberTextView"
+                    style="@style/commonText"
+                    android:layout_marginLeft="@dimen/common_margin_5"
+                    android:textColor="@color/common_red"
+                    android:textSize="@dimen/common_text_size_20" />
+            </LinearLayout>
+
+            <View style="@style/commonLineView" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_padding_10" >
+                
+                <TextView
+                    android:id="@+id/robNameTextView"
+                    style="@style/commonText"
+                    android:layout_width="fill_parent"/>
+
+                <TextView
+                    android:id="@+id/robContentTextView"
+                    style="@style/commonText"
+                    android:layout_marginTop="@dimen/common_margin_3"
+                    android:layout_below="@id/robNameTextView"
+                    android:textSize="@dimen/common_text_size_16"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_width="fill_parent"/>
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_below="@id/robContentTextView"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="@dimen/common_text_size_14"
+                    android:text="@string/rob_prompt"
+                    android:textColor="@color/gray" />
+            </RelativeLayout>
+
+            <View style="@style/commonLineView" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_marginRight="@dimen/common_margin_8"
+                android:layout_marginBottom="@dimen/common_margin_8"
+                android:layout_marginTop="@dimen/common_margin_25"
+                android:background="#FFAF50"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_padding_8"
+                android:visibility="gone" >
+                <TextView 
+                    android:id="@+id/robTimeTextView"
+                    style="@style/commonText"
+                    android:textSize="@dimen/common_text_size_20"
+                    android:textColor="@color/common_red"
+                    android:layout_marginRight="@dimen/common_margin_3"/>
+
+                <com.education.zhxy.common.view.RushBuyCountDownTimerView
+                    android:id="@+id/robRushBuyCountDownTimerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </com.education.zhxy.common.view.RushBuyCountDownTimerView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/robButton"
+                style="@style/commonButton"
+                android:layout_width="fill_parent"
+                android:layout_margin="@dimen/common_margin_8"
+                android:background="@drawable/myinfo_exit_login_button_selector"
+                android:text="@string/rob_robing"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

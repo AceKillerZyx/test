@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/chatListBackTextView"
+            style="@style/commonText"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/chat_list_back"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_22" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chatGroupNameTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/group_icon"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/personal_center_layout_selector"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+       	android:background="#c0c0c0"
+      />
+
+    <ListView
+        android:id="@+id/chatListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_gravity="center"
+        android:divider="#c0c0c0"
+        android:dividerHeight="1px"
+        android:scrollbars="none" >
+        
+    </ListView>
+
+</LinearLayout>

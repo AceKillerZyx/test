@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="@color/common_bg">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/trainBackTextView"
+            style="@style/commonText"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/main_train"
+            android:textColor="@color/common_bg"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:focusable="true"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/trainViewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/common_viewpager_bg"
+            android:focusable="true" />
+
+        <LinearLayout
+            android:id="@+id/trainLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+    
+    <!-- <ListView 
+        android:id="@+id/trainListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:dividerHeight="1dp"
+        android:divider="@color/gray"
+        android:layout_margin="@dimen/common_margin_8"
+        android:background="@drawable/study_layout_bg"
+        android:listSelector="@android:color/transparent"/> -->
+        
+        <RelativeLayout
+                android:id="@+id/trainSchoolCultureRelativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_height_80"
+                android:layout_marginTop="@dimen/common_margin_15"
+                android:background="@drawable/study_layout_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_padding_5" >
+
+                <ImageView
+                    android:id="@+id/trainSchoolCultureImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/wenhuas"
+                    android:contentDescription="@string/app_name" />
+
+                <View
+                    android:id="@+id/trainSchoolView"
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/common_margin_5"
+                    android:layout_toRightOf="@id/trainSchoolCultureImageView"
+                    android:background="@color/gray" />
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_15"
+                    android:layout_toRightOf="@id/trainSchoolCultureImageView"
+                    android:text="@string/peixun_wenhua"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+        
+        	<RelativeLayout
+                android:id="@+id/trainSchoolArtRelativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_height_80"
+                android:layout_marginTop="@dimen/common_margin_15"
+                android:background="@drawable/study_layout_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_padding_5" >
+
+                <ImageView
+                    android:id="@+id/trainSchoolArtImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/yishgu"
+                    android:contentDescription="@string/app_name" />
+
+                <View
+                    android:id="@+id/trainSchoolArtlView"
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/common_margin_5"
+                    android:layout_toRightOf="@id/trainSchoolArtImageView"
+                    android:background="@color/gray" />
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_15"
+                    android:layout_toRightOf="@id/trainSchoolArtImageView"
+                    android:text="@string/peixun_yishu"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            
+        	<RelativeLayout
+                android:id="@+id/trainSchoolJobRelativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_height_80"
+                android:layout_marginTop="@dimen/common_margin_15"
+                android:background="@drawable/study_layout_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_padding_5" >
+
+                <ImageView
+                    android:id="@+id/trainSchoolJobImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/zhiyes"
+                    android:contentDescription="@string/app_name" />
+
+                <View
+                    android:id="@+id/trainSchoolJoblView"
+                    android:layout_width="0.5dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/common_margin_5"
+                    android:layout_toRightOf="@id/trainSchoolJobImageView"
+                    android:background="@color/gray" />
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margin_15"
+                    android:layout_toRightOf="@id/trainSchoolJobImageView"
+                    android:text="@string/peixun_zhiye"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        
+</LinearLayout>

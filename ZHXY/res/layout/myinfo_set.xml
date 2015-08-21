@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/common_bg">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/myinfoNewMessageBackTextView"
+            style="@style/commonText"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/location_newmessagetongzhi"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_22" />
+    </LinearLayout>
+    
+    <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_margin_8"
+                android:orientation="vertical" >
+
+			<RelativeLayout
+                    android:id="@+id/rl_switch_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="@string/myinfo_set_miandarao"
+                        android:textColor="@android:color/black"
+                        android:drawableLeft="@drawable/myinfo_miandarao"
+                        android:textSize="14sp"
+                        android:typeface="serif" 
+                        android:drawablePadding="8dp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_switch_open_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/open_icon"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_switch_close_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/close_icon"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+               <TextView
+                   android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/gray" />
+                
+             <RelativeLayout
+                    android:id="@+id/rl_switch_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:text="@string/myinfo_set_voice"
+                        android:drawableLeft="@drawable/myinfo_set_voice"
+                        android:drawablePadding="8dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+
+                    <ImageView
+                        android:id="@+id/iv_switch_open_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/open_icon"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_switch_close_sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/close_icon"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+                
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/gray" />
+                
+             	<RelativeLayout
+                    android:id="@+id/rl_switch_vibrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:drawableLeft="@drawable/myinfo_zhendong"
+                        android:drawablePadding="8dp"
+                        android:text="@string/myinfo_set_zhendong"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+
+                    <ImageView
+                        android:id="@+id/iv_switch_open_vibrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/open_icon"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_switch_close_vibrate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/close_icon"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/gray" />
+   </LinearLayout>
+
+</LinearLayout>

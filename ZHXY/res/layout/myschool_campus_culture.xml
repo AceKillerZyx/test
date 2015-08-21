@@ -1,0 +1,239 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/campusCultureRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/campusCultureBackTextView"
+            style="@style/commonText"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/myschool_campus_culture"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/campusCultureRelativeLayout"
+        android:background="@color/gray"
+        android:fadingEdge="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/campusCultureOneImaeView"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/common_viewpager_bg"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/campusCultureTitleOneTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textColor="@color/common_text" 
+                    android:textSize="@dimen/common_text_size_14"
+                    android:text="标题"/>
+
+                <View style="@style/commonLineView"/>
+
+                <TextView
+                    android:id="@+id/campusCultureContentOneTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"
+                    android:text="sdajhh"/>
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/campusCultureTwoImaeView"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/common_viewpager_bg"
+                android:layout_marginTop="@dimen/common_margin_10"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/campusCultureTitleTwoTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textColor="@color/common_text" 
+                    android:textSize="@dimen/common_text_size_16"/>
+
+                <View style="@style/commonLineView"/>
+
+                <TextView
+                    android:id="@+id/campusCultureContentTwoTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                     android:textSize="14sp"
+                    android:textColor="@color/gray"/>
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/campusCultureThreeImaeView"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/common_viewpager_bg"
+                android:layout_marginTop="@dimen/common_margin_10"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/campusCultureTitleThreeTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textColor="@color/common_text" 
+                    android:textSize="@dimen/common_text_size_16"/>
+
+                <View style="@style/commonLineView"/>
+
+                <TextView
+                    android:id="@+id/campusCultureContentThreeTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                     android:textSize="14sp"
+                    android:textColor="@color/gray"
+                    />
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/campusCultureFourImaeView"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/common_viewpager_bg"
+                android:layout_marginTop="@dimen/common_margin_10"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/campusCultureTitleFourTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textColor="@color/common_text" 
+                    android:textSize="@dimen/common_text_size_16"/>
+
+                <View style="@style/commonLineView"/>
+
+                <TextView
+                    android:id="@+id/campusCultureContentFourTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                     android:textSize="14sp"
+                    android:textColor="@color/gray"/>
+            </LinearLayout>
+            
+            <ImageView
+                android:id="@+id/campusCultureFiveImaeView"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/common_viewpager_bg"
+                android:layout_marginTop="@dimen/common_margin_10"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/campusCultureTitleFiveTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textColor="@color/common_text" 
+                    android:textSize="@dimen/common_text_size_16"/>
+
+                <View style="@style/commonLineView"/>
+
+                <TextView
+                    android:id="@+id/campusCultureContentFiveTextView"
+                    style="@style/commonText"
+                    android:padding="@dimen/common_padding_8"
+                    android:textColor="@color/gray"/>
+                
+                
+              <LinearLayout 
+                  android:id="@+id/urlLinearLayout"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="right"
+                  android:layout_marginTop="5dp">
+                  <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看更多"
+                android:layout_gravity="right"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="3dp"
+                android:textSize="12sp"
+                android:textColor="#0077FF"/>
+                  
+                  <TextView 
+                      android:id="@+id/campusCultureContentMoreTextView"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="3dp"
+                      android:layout_marginRight="3dp"
+                      android:textSize="12sp"
+                       android:textColor="#0077FF"
+                     />
+                  	 
+              </LinearLayout>  
+                
+                
+                
+            </LinearLayout>
+            
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

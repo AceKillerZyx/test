@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/chatClassInfoBackTextView"
+            style="@style/commonText"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/chat_class_info"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/common_bg"
+        android:fadingEdge="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_15"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_10" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/commonText"
+                        android:text="@string/chat_class_name"
+                        android:textColor="@color/common_text"
+                        android:textSize="@dimen/common_text_size_20" />
+
+                    <TextView
+                        android:id="@+id/chatClassInfoNameTextView"
+                        style="@style/commonText"
+                        android:layout_marginLeft="@dimen/common_margin_15"
+                        android:textSize="16sp"
+         				android:textColor="@color/gray"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/commonLineView"
+                    android:layout_marginTop="@dimen/common_margin_8"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_8"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/commonText"
+                        android:text="@string/chat_class_slogan"
+                        android:textColor="@color/common_text"
+                        android:textSize="@dimen/common_text_size_20" />
+
+                    <TextView
+                        android:id="@+id/chatClassInfoSloganTextView"
+                        style="@style/commonText"
+                        android:layout_marginLeft="@dimen/common_margin_15"
+                        android:textSize="16sp"
+         				android:textColor="@color/gray" />
+                </LinearLayout>
+
+                <View
+                    style="@style/commonLineView"
+                    android:layout_marginTop="@dimen/common_margin_8"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_8"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/commonText"
+                        android:text="@string/chat_class_willing"
+                        android:textColor="@color/common_text"
+                        android:textSize="@dimen/common_text_size_20" />
+
+                    <TextView
+                        android:id="@+id/chatClassInfoWillingTextView"
+                        style="@style/commonText"
+                        android:layout_marginLeft="@dimen/common_margin_15"
+                        android:textSize="16sp"
+         				android:textColor="@color/gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_15"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_10" >
+
+                <TextView
+                    style="@style/commonText"
+                    android:text="@string/chat_class_persons"
+                    android:textColor="@color/common_text"
+                    android:textSize="@dimen/common_text_size_20" />
+
+                <View
+                    style="@style/commonLineView"
+                    android:layout_marginTop="@dimen/common_margin_8"
+                    android:background="@color/gray" />
+
+                <com.education.zhxy.common.view.HorizontalListView
+                    android:id="@+id/chatClassInfoHorizontalListView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/common_height_100"
+                    android:layout_marginTop="@dimen/common_margin_8"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_15"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/common_padding_10" >
+
+                <TextView
+                    android:id="@+id/chatClassInfoHistoryHomeworkTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chat_class_history_homework"
+                    android:textColor="@color/common_text"
+                    android:textSize="@dimen/common_text_size_20" />
+
+                <View
+                    style="@style/commonLineView"
+                    android:layout_marginTop="@dimen/common_margin_8"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_8"
+                    android:layout_gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/pingbi"
+                        style="@style/commonText"
+                        android:layout_centerVertical="true"
+                        android:text="@string/chat_class_shield"
+                        android:textColor="@color/common_text"
+                        android:textSize="@dimen/common_text_size_20" />
+
+                    <CheckBox
+                        android:id="@+id/chatClassInfoShieldCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/common_margin_15"
+                        android:button="@null"
+                        android:background="@drawable/chat_class_checkbox_selector" />
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/commonLineView"
+                    android:layout_marginTop="@dimen/common_margin_8"
+                    android:background="@color/gray" />
+
+                <TextView
+                    android:id="@+id/chatClassInfoRecordTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_8"
+                    android:text="@string/chat_class_delete_record"
+                    android:textColor="@color/common_text"
+                    android:textSize="@dimen/common_text_size_20" />
+            </LinearLayout>
+            
+            <Button 
+                android:id="@+id/chatClassInfoExitButton"
+                style="@style/commonButton"
+                android:layout_margin="@dimen/common_margin_8"
+                android:background="@drawable/myinfo_exit_login_button_selector"
+                android:text="@string/chat_class_exit"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

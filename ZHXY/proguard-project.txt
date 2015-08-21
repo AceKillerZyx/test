@@ -1,0 +1,164 @@
+-dontwarn
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify 
+-verbose
+-dontwarn
+-dontskipnonpubliclibraryclassmembers
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-keepattributes InnerClasses,LineNumberTable
+
+-keep public class * extends android.app.Fragment  
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.app.View
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keep class android.** {*;}
+
+-keepclassesw class * {
+    native <methods>;
+}
+
+-keepclassesw class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclassesw class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context);
+}
+
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keep public class com.education.zhxy.R$*{
+    public static final int *;
+}
+
+-keep class * implements java.io.Serializable {*;}
+
+-keepclassmembers class * implements java.io.Serializable {
+   static final long serialVersionUID;
+   private static final java.io.ObjectStreamField[] serialPersistentFields;
+   !static !transient <fields>;
+   private void writeObject(java.io.ObjectOutputStream);
+   private void readObject(java.io.ObjectInputStream);
+   java.lang.Object writeReplace();
+   java.lang.Object readResolve();
+}
+#v4包
+-libraryjars libs/android-support-v4.jar
+-dontwarn android.support.v4.** 
+-dontwarn **CompatHoneycomb
+-dontwarn **CompatHoneycombMR2
+-dontwarn **CompatCreatorHoneycombMR2
+-keep interface android.support.v4.app.** { *; }
+-keep class android.support.v4.** { *; }
+-keep public class * extends android.support.v4.**
+-keep public class * extends android.app.Fragment
+
+#百度相关
+-libraryjars libs/pushservice-4.3.0.4.jar
+-libraryjars libs/baidumapapi_v3_3_0.jar
+-libraryjars libs/locSDK_5.0.jar
+-dontwarn com.baidu.**
+-keep class com.baidu.** { *; }
+-keep class vi.com.gdi.bgl.android.**{*;}
+
+#环信相关
+-libraryjars libs/easemobchat_2.1.7.jar
+-dontwarn  com.easemob.**
+-keep class com.easemob.** {*;}
+-keep class org.jivesoftware.** {*;}
+-keep class org.apache.** {*;}
+#2.0.9后的不需要加下面这个keep
+#-keep class org.xbill.DNS.** {*;}
+#另外，demo中发送表情的时候使用到反射，需要keep SmileUtils,注意前面的包名，
+#不要SmileUtils复制到自己的项目下keep的时候还是写的demo里的包名
+-keep class com.education.zhxy.easemob.utils.SmileUtils {*;}
+#2.0.9后加入语音通话功能，如需使用此功能的api，加入以下keep
+-dontwarn ch.imvs.**
+-dontwarn org.slf4j.**
+-keep class org.ice4j.** {*;}
+-keep class net.java.sip.** {*;}
+-keep class org.webrtc.voiceengine.** {*;}
+-keep class org.bitlet.** {*;}
+-keep class org.slf4j.** {*;}
+-keep class ch.imvs.** {*;}
+
+#JSON相关
+-libraryjars libs/fastjson-1.1.35.jar
+-dontwarn com.alibaba.fastjson.**
+-keep class com.alibaba.fastjson.**{*;}
+
+#http client
+-libraryjars libs/httpmime-4.1.1.jar
+-keep class org.apache.http.entity.mime.**{*;}
+
+#微信
+-libraryjars libs/libammsdk.jar
+-keep class com.tencent.mm.sdk.openapi.WXMediaMessage {*;}
+-keep class com.tencent.mm.sdk.openapi.** implements com.tencent.mm.sdk.openapi.WXMediaMessage$IMediaObject {*;} 
+
+#pinyin4j
+-dontwarn net.soureceforge.pinyin4j.**
+-dontwarn demo.**
+-libraryjars libs/pinyin4j-2.5.0.jar
+-keep class net.sourceforge.pinyin4j.** { *;}
+-keep class demo.** { *;}
+
+#图片加载
+-libraryjars libs/universal-image-loader-1.9.3.jar
+-keep class com.nostra13.universalimageloader.** { *; }
+
+#新浪微博
+-libraryjars libs/weibosdkcore_v3.0.1.jar                 
+-keep class com.sina.weibo.sdk.** { *; }    
+
+#短信验证
+-libraryjars libs/SMSSDK-1.1.9.jar
+-keep class cn.sharesdk.**{*;}
+-keep class m.framework.**{*;}
+-keep class cn.smssdk.**{*;}    
+
+-keepattributes Signature

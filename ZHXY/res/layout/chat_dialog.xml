@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_height_45"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/chatDialogLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_height_35"
+        android:background="@drawable/chat_dialog_layout_bg"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/chatDialogCopyTextView"
+            style="@style/commonText"
+            android:textColor="@color/common_bg"
+            android:padding="@dimen/common_padding_5"
+            android:text="@string/chat_dialog_copy" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="#baeaec" />
+
+        <TextView
+            android:id="@+id/chatDialogShareTextView"
+            style="@style/commonText"
+            android:textColor="@color/common_bg"
+            android:padding="@dimen/common_padding_5"
+            android:text="@string/chat_dialog_share" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="#baeaec" />
+
+        <TextView
+            android:id="@+id/chatDialogDeleteTextView"
+            style="@style/commonText"
+            android:textColor="@color/common_bg"
+            android:padding="@dimen/common_padding_5"
+            android:text="@string/chat_dialog_delete" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_dialog_arrow_down"
+        android:layout_marginTop="31dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

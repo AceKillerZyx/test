@@ -1,0 +1,301 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/loveDetailRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/loveDetailBackTextView"
+            style="@style/commonText"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/main_love"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/loveDetailBottomLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/loveDetailButtonLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@color/common_bottom_bg"
+            android:padding="@dimen/common_padding_5" >
+
+            <RelativeLayout
+                android:id="@+id/loveDetailAttentionRelativeLayout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/love_detail_attention_button_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_padding_5" >
+
+                <ImageView
+                    android:id="@+id/loveDetailAttentionImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/love_attention_normal"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/loveDetailAttentionTextView"
+                    style="@style/commonText"
+                    android:layout_toRightOf="@id/loveDetailAttentionImageView"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="@string/love_detail_attention"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/common_text_size_20" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/loveDetailDonateButton"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/common_margin_8"
+                android:layout_weight="2"
+                android:background="@drawable/myinfo_exit_login_button_selector"
+                android:text="@string/love_detail_donate"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/common_text_size_20" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loveDetailDonateOkButton"
+            style="@style/commonButton"
+            android:layout_margin="@dimen/common_margin_8"
+            android:text="@string/love_detail_donate_ok"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/loveDetailBottomLinearLayout"
+        android:layout_below="@id/loveDetailRelativeLayout"
+        android:background="@color/common_bg"
+        android:scrollbars="none"
+        android:fadingEdge="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/loveDetailImaeView"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/common_viewpager_bg"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:id="@+id/loveDetailContentLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_8"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/common_padding_10" >
+
+                    <TextView
+                        android:id="@+id/loveDetailNameTextView"
+                        style="@style/commonText"
+                        android:layout_marginTop="@dimen/common_margin_3"
+                        android:textColor="@color/common_text" />
+
+                    <TextView
+                        android:id="@+id/loveDetailSexTextView"
+                        style="@style/commonText"
+                        android:layout_marginTop="@dimen/common_margin_3"
+                        android:textColor="@color/common_text" />
+
+                    <TextView
+                        android:id="@+id/loveDetailAgeTextView"
+                        style="@style/commonText"
+                        android:layout_marginTop="@dimen/common_margin_3"
+                        android:textColor="@color/common_text" />
+
+                    <TextView
+                        android:id="@+id/loveDetailEthnicTextView"
+                        style="@style/commonText"
+                        android:layout_marginTop="@dimen/common_margin_3"
+                        android:textColor="@color/common_text" />
+
+                    <TextView
+                        android:id="@+id/loveDetailPovertyTextView"
+                        style="@style/commonText"
+                        android:layout_marginTop="@dimen/common_margin_3"
+                        android:textColor="@color/common_text" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/common_margin_5"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/loveDetailAddressTextView"
+                        style="@style/commonText"
+                        android:layout_marginTop="@dimen/common_margin_5"
+                        android:textColor="@color/common_text" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/loveDetailContentTextView"
+                    style="@style/commonText"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/common_margin_8"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/common_padding_10"
+                    android:lines="3"
+                    android:textColor="@color/common_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/loveDetailContentTwoLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="@dimen/common_padding_10" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_5"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/commonText"
+                        android:text="@string/love_detail_name"
+                        android:textColor="@color/common_text" />
+
+                    <EditText
+                        android:id="@+id/loveDetailNameEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_margin_5"
+                        android:background="@null"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/common_margin_5"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_5"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/commonText"
+                        android:text="@string/love_detail_phone"
+                        android:textColor="@color/common_text" />
+
+                    <EditText
+                        android:id="@+id/loveDetailPhoneEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_marginLeft="@dimen/common_margin_5"
+                        android:inputType="phone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/common_margin_5"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_margin_5"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/commonText"
+                        android:text="@string/love_detail_price"
+                        android:textColor="@color/common_text" />
+
+                    <EditText
+                        android:id="@+id/loveDetailPriceEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_marginLeft="@dimen/common_margin_5"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/common_margin_5"
+                    android:background="@color/gray" />
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_marginTop="@dimen/common_margin_5"
+                    android:text="@string/love_detail_info"
+                    android:textSize="@dimen/common_text_size_14"
+                    android:textColor="@color/gray" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/common_margin_5"
+                    android:background="@color/gray" />
+
+                <EditText
+                    android:id="@+id/loveDetailMessageEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="@dimen/common_margin_8"
+                    android:padding="@dimen/common_padding_5"
+                    android:lines="5"
+                    android:hint="@string/love_detail_message"
+                    android:textColorHint="@color/common_text"
+                    android:gravity="top|left"
+                    android:background="@drawable/love_detail_message_edittext_bg"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

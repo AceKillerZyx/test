@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<ImageView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:scaleType="fitXY"
+	    android:contentDescription="@string/app_name"
+	    android:src="@drawable/zhxy_guide_three"/>
+
+	 <TextView
+	     android:id="@+id/start"
+	     style="@style/commonText"
+	     android:layout_alignParentBottom="true"
+	     android:layout_alignParentLeft="true"
+	     android:layout_marginBottom="@dimen/common_margin_60"
+	     android:layout_marginLeft="@dimen/common_margin_25"
+	     android:background="@drawable/zhxy_guidel_start_bg"
+	     android:text="@string/zhxy_guide4_start"
+	     android:textColor="@color/common_bg"
+	     android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+#mac文件
+.DS_Store
+
+#过滤文件夹
+bin/

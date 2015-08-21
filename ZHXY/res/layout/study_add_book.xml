@@ -1,0 +1,242 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/studyAddBookBackTextView"
+            style="@style/commonText"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/study_add_book"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin_8"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/studyAddBookImageView"
+                android:layout_width="@dimen/common_width_70"
+                android:layout_height="@dimen/common_height_100"
+                android:layout_margin="@dimen/common_margin_5"
+                android:background="@drawable/study_item_bg"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <View style="@style/commonLineView" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_height_45"
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:background="@drawable/study_layout_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_padding_5" >
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/study_add_book_type" />
+
+                <Spinner
+                    android:id="@+id/studyAddBookTypeSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:animationCache="true"
+                    android:background="@null"
+                    android:drawSelectorOnTop="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_height_45"
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:background="@drawable/study_layout_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_padding_5" >
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/study_add_book_stage" />
+
+                <Spinner
+                    android:id="@+id/studyAddBookStageSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:animationCache="true"
+                    android:background="@null"
+                    android:drawSelectorOnTop="true"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/studyAddBookGreadLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_height_45"
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:background="@drawable/study_layout_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_padding_5" >
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/study_add_book_gread" />
+
+                <Spinner
+                    android:id="@+id/studyAddBookGreadSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:animationCache="true"
+                    android:background="@null"
+                    android:drawSelectorOnTop="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_height_45"
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:background="@drawable/study_layout_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_padding_5" >
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/study_add_book_name" />
+
+                <EditText
+                    android:id="@+id/studyAddBookNameEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_height_45"
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:background="@drawable/study_layout_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_padding_5" >
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/study_add_book_author" />
+
+                <EditText
+                    android:id="@+id/studyAddBookAuthorEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_height_45"
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:background="@drawable/study_layout_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_padding_5" >
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/study_publishers" />
+
+                <EditText
+                    android:id="@+id/studyAddBookPublishersEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_height_45"
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:background="@drawable/study_layout_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_padding_5" >
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/study_time" />
+
+                <TextView
+                    android:id="@+id/studyAddBookTimeTextView"
+                    android:layout_width="fill_parent"
+                    style="@style/commonText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/common_height_45"
+                android:layout_marginTop="@dimen/common_margin_8"
+                android:background="@drawable/study_layout_bg"
+                android:gravity="center_vertical"
+                android:padding="@dimen/common_padding_5" >
+
+                <TextView
+                    style="@style/commonText"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/study_add_book_info" />
+
+                <EditText
+                    android:id="@+id/studyAddBookInfoEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/studyAddBookButton"
+                style="@style/commonButton"
+                android:layout_marginTop="@dimen/common_margin_25"
+                android:text="@string/study_add_book_add" />
+            
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_margin_15"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

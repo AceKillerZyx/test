@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/common_margin_8"
+    android:orientation="horizontal" >
+
+    <com.education.zhxy.common.view.CircleImageView
+        android:id="@+id/chatPersonalItemCircleImageView"
+        android:layout_width="@dimen/common_width_35"
+        android:layout_height="@dimen/common_height_35"
+        android:src="@drawable/common_header_image"
+        android:contentDescription="@string/app_name" />
+    
+    <TextView 
+        android:id="@+id/chatPersonalPersonalTextView"
+        style="@style/commonText"
+        android:layout_marginLeft="@dimen/common_margin_8"
+		android:textSize="@dimen/common_text_size_12"
+		android:textColor="@color/gray"
+		android:text="老师"
+		/>
+    
+    <TextView 
+        android:id="@+id/chatPersonalItemTextView"
+        style="@style/commonText"
+        android:layout_marginLeft="@dimen/common_margin_5"
+        android:textSize="@dimen/common_text_size_16"
+        android:textColor="@color/common_text"
+        android:text="张三"/>
+    
+    <ImageView
+            android:id="@+id/contactsUnReadImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/discuss_area_unread"
+            android:layout_marginLeft="@dimen/common_margin_15"
+            android:visibility="gone" />
+    
+</LinearLayout>

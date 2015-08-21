@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/myinfoFeedbackBackTextView"
+            style="@style/commonText"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/myinfo_feedback"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/myinfoFeedbackEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_margin_8"
+        android:background="@drawable/heart_item_layout_bg"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="7"
+        android:padding="@dimen/common_padding_5" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_height_45"
+        android:background="@drawable/heart_item_layout_bg"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/common_margin_8"
+        android:layout_marginRight="@dimen/common_margin_8"
+        android:padding="@dimen/common_padding_5" >
+
+        <TextView
+            style="@style/commonText"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/myinfo_feedback_phone"
+            android:textColor="@color/common_text"/>
+
+        <EditText
+            android:id="@+id/myinfoFeedbackPhoneEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/myinfoFeedbackButton"
+        style="@style/commonButton"
+        android:layout_marginTop="@dimen/common_margin_25"
+        android:layout_marginLeft="@dimen/common_margin_8"
+        android:layout_marginRight="@dimen/common_margin_8"
+        android:text="@string/myinfo_feedback_submit" />
+
+</LinearLayout>

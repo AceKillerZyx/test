@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_bg"
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+
+        <TextView
+            android:id="@+id/registerXuZhiBackTextView"
+            style="@style/commonText"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/myinfo_register_xuzhi"
+            android:textColor="@color/common_bg"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+    
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+    
+  <ScrollView 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:scrollbars="none"
+      >
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myinfo_register_xuzhi_fuwujieshou"
+        android:textSize="16sp"/>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myinfo_register_xuzhi_txt1"
+        android:textSize="14sp"/>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myinfo_register_xuzhi_fuwu_update"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myinfo_register_xuzhi_txt2"
+        android:textSize="14sp"/>
+    
+   <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myinfo_register_xuzhi_name_pwd"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myinfo_register_xuzhi_txt3"
+        android:textSize="14sp"/>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myinfo_register_xuzhi_userinfo"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myinfo_register_xuzhi_txt4"
+        android:textSize="14sp"/>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myinfo_register_xuzhi_falv"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myinfo_register_xuzhi_txt5"
+        android:textSize="14sp"/>
+    
+    <Button
+                android:id="@+id/registerXuzhiNextButton"
+                style="@style/commonButton"
+				android:layout_marginBottom="10dp"
+				android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/common_margin_15"
+                android:layout_marginRight="@dimen/common_margin_15"
+                android:text="@string/myinfo_login_register_xuzhi_next" />
+    
+   </LinearLayout> 
+  </ScrollView>
+</LinearLayout>
+</LinearLayout>

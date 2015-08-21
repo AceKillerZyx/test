@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_bg"
+        android:padding="@dimen/common_padding_10" >
+        <TextView
+            android:id="@+id/myClassBackTextView"
+            style="@style/commonText"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/common_bg"
+            android:drawableLeft="@drawable/common_title_back_selector"
+            android:textSize="@dimen/common_text_size_22" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myclassPrefecturesRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_height_60"
+        android:layout_marginBottom="@dimen/common_margin_8"
+        android:layout_marginLeft="@dimen/common_margin_8"
+        android:layout_marginRight="@dimen/common_margin_8"
+        android:layout_marginTop="@dimen/common_margin_15"
+        android:background="@drawable/study_layout_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/myclassPrefecturesImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_8"
+            android:background="@drawable/common_arrow_down"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/myclassPrefecturesTextView"
+            style="@style/commonText"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_8"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/myclass_prefectures"
+            android:textSize="@dimen/common_text_size_20" />
+
+        <Spinner
+            android:id="@+id/myclassPrefecturesSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/myclassPrefecturesImageView"
+            android:layout_toRightOf="@id/myclassPrefecturesTextView"
+            android:animationCache="true"
+            android:background="@null"
+            android:drawSelectorOnTop="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/common_text_size_20"
+            android:layout_marginLeft="@dimen/common_margin_8"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myclassSchoolRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_height_60"
+        android:layout_margin="@dimen/common_margin_8"
+        android:background="@drawable/study_layout_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/myclassSchoolImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_8"
+            android:background="@drawable/common_arrow_down"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/myclassSchoolTextView"
+            style="@style/commonText"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_8"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/myclass_school"
+            android:textSize="@dimen/common_text_size_20" />
+        
+        <Spinner
+            android:id="@+id/myclassSchoolSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/myclassSchoolImageView"
+            android:layout_toRightOf="@id/myclassSchoolTextView"
+            android:animationCache="true"
+            android:background="@null"
+            android:drawSelectorOnTop="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/common_text_size_20"
+            android:layout_marginLeft="@dimen/common_margin_8"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myclassGradeRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_height_60"
+        android:layout_margin="@dimen/common_margin_8"
+        android:background="@drawable/study_layout_bg"
+        android:gravity="center_vertical" >
+
+         <ImageView
+            android:id="@+id/myclassGradeImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_8"
+            android:background="@drawable/common_arrow_down"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/myclassGradeTextView"
+            style="@style/commonText"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_8"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/myclass_grade"
+            android:textSize="@dimen/common_text_size_20" />
+        
+        <Spinner
+            android:id="@+id/myclassGradeSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/myclassGradeImageView"
+            android:layout_toRightOf="@id/myclassGradeTextView"
+            android:animationCache="true"
+            android:background="@null"
+            android:drawSelectorOnTop="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/common_text_size_20"
+            android:layout_marginLeft="@dimen/common_margin_8"
+            android:gravity="center" /> 
+          <!-- <EditText 
+            android:id="@+id/myClassGradeEditeText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:background="@null"
+            android:layout_toRightOf="@id/myclassGradeTextView"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/common_text_size_20"
+            android:layout_marginLeft="@dimen/common_margin_8"
+            android:gravity="center"
+            android:inputType="text"  /> -->
+            
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myclassClassRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_height_60"
+        android:layout_margin="@dimen/common_margin_8"
+        android:background="@drawable/study_layout_bg"
+        android:gravity="center_vertical" >
+
+       <ImageView
+            android:id="@+id/myclassClassImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_8"
+            android:background="@drawable/common_arrow_down"
+            android:contentDescription="@string/app_name" /> 
+
+        <TextView
+            android:id="@+id/myclassClassTextView"
+            style="@style/commonText"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_8"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/myclass_class"
+            android:textSize="@dimen/common_text_size_20" />
+          <Spinner
+            android:id="@+id/myclassClassSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/myclassClassImageView"
+            android:layout_toRightOf="@id/myclassClassTextView"
+            android:animationCache="true"
+            android:background="@null"
+            android:drawSelectorOnTop="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/common_text_size_20"
+            android:layout_marginLeft="@dimen/common_margin_8"
+            android:gravity="center" /> 
+            
+         <!--    
+         <EditText 
+            android:id="@+id/myClassClassEditeText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           android:background="@null"
+            android:layout_toRightOf="@id/myclassClassTextView"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/common_text_size_20"
+            android:layout_marginLeft="@dimen/common_margin_8"
+            android:gravity="center"
+            android:inputType="text"  /> -->
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/myclassChoiseButton"
+        style="@style/commonButton"
+        android:layout_margin="@dimen/common_margin_8"
+        android:text="@string/myclass_choise" />
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/common_height_90"
+    android:background="@drawable/heart_item_layout_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/common_padding_5" >
+
+    <ImageView
+        android:id="@+id/chatHistoryWorkItemImageView"
+        android:layout_width="@dimen/common_width_70"
+        android:layout_height="@dimen/common_height_90"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/study_item_bg" />
+
+    <TextView
+        android:id="@+id/chatHistoryWorkItemWeekTextView"
+        style="@style/commonText"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/common_margin_5"
+        android:layout_toRightOf="@id/chatHistoryWorkItemImageView"
+        android:layout_toLeftOf="@id/chatHistoryWorkItemWeekTextView"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/chatHistoryWorkItemTimeTextView"
+            style="@style/commonText"
+            android:gravity="center_vertical"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/common_text" />
+
+        <TextView
+            android:id="@+id/chatHistoryWorkItemInfoTextView"
+            style="@style/commonText"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/common_text_size_16" />
+    </LinearLayout>
+
+</RelativeLayout>
