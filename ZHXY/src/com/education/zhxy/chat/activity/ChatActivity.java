@@ -218,6 +218,7 @@ public class ChatActivity extends BasicActivity  {
 	
 	
 	private Intent intent;
+	private String name;
 	private UserInfo userInfo;
 	// 自定义ProgressDialog
 	private CustomProgressDialog pd = null;
