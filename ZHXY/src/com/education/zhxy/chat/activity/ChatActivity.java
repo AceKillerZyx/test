@@ -112,7 +112,7 @@ import com.education.zhxy.util.ToastUtil;
 public class ChatActivity extends BasicActivity  {
 	
 	private static final String TAG = ChatActivity.class.getSimpleName();
-	
+	sdfs 
 	private static final int REQUEST_CODE_EMPTY_HISTORY = 2;
 	public static final int REQUEST_CODE_CONTEXT_MENU = 3;
 	private static final int REQUEST_CODE_MAP = 4;
